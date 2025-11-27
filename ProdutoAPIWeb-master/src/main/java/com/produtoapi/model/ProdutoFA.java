@@ -11,18 +11,17 @@ public class ProdutoFA {
     private Long id;
 
     private String nome;
-    private String descricao; // Mantive, mas seu HTML atual não usa (sem problemas, fica null)
+    private String descricao;
     private Double preco;
 
-    // MUDANÇA 1: Renomeado para bater com o HTML
+
     private Integer quantidade;
 
-    // MUDANÇA 2: Campo novo adicionado
+
     private String status;
 
     public ProdutoFA() {}
 
-    // GETTERS E SETTERS ATUALIZADOS
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

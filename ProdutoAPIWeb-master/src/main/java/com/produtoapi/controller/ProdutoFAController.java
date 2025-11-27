@@ -38,12 +38,12 @@ public class ProdutoFAController {
         return service.buscarPorId(id)
                 .map(existente -> {
                     existente.setNome(produto.getNome());
-                    // Se o HTML não enviar descrição, mantém a antiga ou fica null
+
                     if(produto.getDescricao() != null) existente.setDescricao(produto.getDescricao());
 
                     existente.setPreco(produto.getPreco());
 
-                    // ATUALIZAÇÃO: Campos novos
+
                     existente.setQuantidade(produto.getQuantidade());
                     existente.setStatus(produto.getStatus());
 
